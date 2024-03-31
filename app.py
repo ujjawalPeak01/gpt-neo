@@ -11,8 +11,6 @@ class InferlessPythonModel:
         file_path = "/var/nfs-mount/testing-volume/testing.txt"
         with open(file_path, 'w') as file:
             file.write('This is testing')
-
-        pint("This has to raise an error")
         
         print("This is Initialize Code", flush=True)
 
