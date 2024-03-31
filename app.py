@@ -13,6 +13,7 @@ class InferlessPythonModel:
             file.write('This is testing')
         
         print("This is Initialize Code", flush=True)
+        pint("THis should fail voila")
 
     
     def infer(self, inputs):
