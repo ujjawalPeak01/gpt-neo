@@ -6,14 +6,8 @@ class InferlessPythonModel:
 
     def initialize(self):
         self.generator = pipeline("text-generation", model="EleutherAI/gpt-neo-125M",device=0)
-
-        volume_path = "/var/nfs-mount/testing-volume"
-        file_path = "/var/nfs-mount/testing-volume/testing.txt"
-        with open(file_path, 'w') as file:
-            file.write('This is testing')
         
         print("This is Initialize Code", flush=True)
-        pint("This should fail")
 
     
     def infer(self, inputs):
