@@ -1,6 +1,3 @@
-import json
-import fastapi
-import requests
 from transformers import pipeline
 
 
