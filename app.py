@@ -1,4 +1,5 @@
 from transformers import pipeline
+import fastapi
 
 
 class InferlessPythonModel:
