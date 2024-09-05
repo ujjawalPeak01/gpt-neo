@@ -6,19 +6,6 @@ class InferlessPythonModel:
 
     def initialize(self):
         self.generator = pipeline("text-generation", model="EleutherAI/gpt-neo-125M",device=0)
-        lines = [
-            "This is line one.\n",
-            "This is line two.\n",
-            "This is line three.\n",
-            "This is line four.\n",
-            "This is line five.\n"
-        ]
-        selected_lines = random.sample(lines, 2)
-        volume_location = "/var/nfs-mount/testing_volume_name"
-        file_name = f"{volume_location}/abcd.txt"
-        with open(file_name, "a+") as file:
-            file.writelines(selected_lines)
-            
         print("This is Initialize Code", flush=True)
 
     
