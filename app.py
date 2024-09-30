@@ -1,7 +1,6 @@
 from transformers import pipeline
 import time
 import random
-import fastapi
 
 class InferlessPythonModel:
 
